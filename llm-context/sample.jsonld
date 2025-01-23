@@ -1,0 +1,49 @@
+{
+    "@context": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "dct": "http://purl.org/dc/terms/",
+      "vann": "http://purl.org/vocab/vann/",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "oplax": "https://example.com/oplax#"
+    },
+    "@graph": [
+      {
+        "@id": "https://example.com/supply-chain-document-workflow#",
+        "@type": "owl:Ontology",
+        "dct:title": "Supply Chain Document Workflow Ontology",
+        "dct:description": "Provides a structured set of modules (Core, Ordering, Billing, Logistics) to describe documents and processes within a supply chain workflow.",
+        "dct:publisher": {
+          "@id": "https://example.com/organization/PublisherOrg"
+        },
+        "dct:license": "https://creativecommons.org/licenses/by/4.0/",
+        "dct:created": "2025-01-23",
+        "vann:preferredNamespaceUri": "https://example.com/supply-chain-document-workflow#",
+        "vann:preferredNamespacePrefix": "scdw",
+        "owl:versionInfo": "1.0.0",
+        "dct:hasPart": [
+          {
+            "@id": "https://example.com/supply-chain-document-workflow/core#",
+            "dct:title": "Core Module",
+            "dct:description": "Foundation classes and properties for the supply chain document workflow."
+          },
+          {
+            "@id": "https://example.com/supply-chain-document-workflow/ordering#",
+            "dct:title": "Ordering Module",
+            "dct:description": "Defines concepts and relations specific to purchase orders."
+          },
+          {
+            "@id": "https://example.com/supply-chain-document-workflow/billing#",
+            "dct:title": "Billing Module",
+            "dct:description": "Defines concepts and relations specific to invoices and payment details."
+          },
+          {
+            "@id": "https://example.com/supply-chain-document-workflow/logistics#",
+            "dct:title": "Logistics Module",
+            "dct:description": "Defines concepts and relations specific to shipping, delivery, and logistics."
+          }
+        ],
+        "oplax:promptContext": "This ontology is the main entry point for the Supply Chain Document Workflow. Refer to the modules for specific classes and properties. LLMs can use this information to guide queries, generate documentation, or perform transformations involving supply chain documents."
+      }
+    ]
+  }
